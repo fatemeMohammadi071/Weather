@@ -26,7 +26,7 @@ class DefaultWeatherListViewModelTests: XCTestCase {
                 self.expectation?.fulfill()
         }
         
-        func fetchWeatherIcon(weatherStateAbbr: WeatherStateAbbr?, completion: @escaping (Result<Data?, Error>) -> Void) {}
+        func fetchWeatherIcon(weatherStateAbbr: String?, completion: @escaping (Result<Data?, Error>) -> Void) {}
     }
 
     func test_whenGetWeatherListFailed_thenViewModelHasError() {
